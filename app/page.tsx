@@ -165,7 +165,7 @@ export default function GasShield() {
 
       {/* HERO */}
       <section id="hero" style={{ minHeight: "92vh", display: "flex", alignItems: "center", padding: "100px 24px 60px", background: `linear-gradient(170deg, ${C.white} 0%, ${C.gL} 100%)`, position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", right: "-10%", top: "10%", width: "55%", height: "80%", borderRadius: 28, overflow: "hidden", opacity: 0.12, background: `linear-gradient(135deg, ${C.g2}20, ${C.g3}10)` }}><img src={IMG.factory} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={e => { e.target.style.display = "none"; }} /></div>
+        <div style={{ position: "absolute", right: "-10%", top: "10%", width: "55%", height: "80%", borderRadius: 28, overflow: "hidden", opacity: 0.12, background: `linear-gradient(135deg, ${C.g2}20, ${C.g3}10)` }}><img src={IMG.factory} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={e => { e.currentTarget.style.display = "none"; }} /></div>
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: 640 }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(58,122,40,0.08)", border: "1px solid rgba(58,122,40,0.15)", borderRadius: 20, padding: "5px 14px", fontSize: 11, fontWeight: 700, color: C.g3, letterSpacing: 2, textTransform: "uppercase", marginBottom: 20 }}>
@@ -208,7 +208,7 @@ export default function GasShield() {
           ].map((c, i) => (
             <div key={i} style={{ ...card, overflow: "hidden", transition: "all 0.3s" }} onMouseOver={e => { e.currentTarget.style.boxShadow = SH2; e.currentTarget.style.transform = "translateY(-4px)"; }} onMouseOut={e => { e.currentTarget.style.boxShadow = SH; e.currentTarget.style.transform = ""; }}>
               <div style={{ height: 140, overflow: "hidden", background: `linear-gradient(135deg, ${C.g2}15, ${C.g3}10)`, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-                <img src={c.img} alt={c.t} style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", top: 0, left: 0 }} onError={e => { e.target.style.display = "none"; }} />
+                <img src={c.img} alt={c.t} style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", top: 0, left: 0 }} onError={e => { e.currentTarget.style.display = "none"; }} />
                 <span style={{ fontSize: 48, opacity: 0.25, position: "relative" }}>{c.emoji}</span>
               </div>
               <div style={{ padding: 22, borderLeft: `3px solid ${C.g3}` }}>
@@ -256,7 +256,7 @@ export default function GasShield() {
             return (
             <div key={pi} style={{ ...card, overflow: "hidden", transition: "all 0.3s" }} onMouseOver={e => { e.currentTarget.style.boxShadow = SH2; e.currentTarget.style.transform = "translateY(-4px)"; }} onMouseOut={e => { e.currentTarget.style.boxShadow = SH; e.currentTarget.style.transform = ""; }}>
               <div style={{ height: 200, background: `linear-gradient(135deg, ${PROD_COLORS[idx % PROD_COLORS.length]}22, ${PROD_COLORS[idx % PROD_COLORS.length]}11)`, position: "relative", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <img src={p.img} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", top: 0, left: 0 }} onError={e => { e.target.style.display = "none"; }} />
+                <img src={p.img} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", top: 0, left: 0 }} onError={e => { e.currentTarget.style.display = "none"; }} />
                 <span style={{ fontSize: 56, opacity: 0.3, position: "relative", zIndex: 1 }}>{PROD_ICONS[idx % PROD_ICONS.length]}</span>
                 {p.badge && <span style={{ position: "absolute", top: 10, right: 10, background: C.g2, color: "#fff", fontSize: 9, fontWeight: 700, padding: "4px 10px", borderRadius: 6, letterSpacing: 0.5, textTransform: "uppercase", zIndex: 2 }}>{p.badge}</span>}
                 <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 50, background: "linear-gradient(to top, rgba(26,60,26,0.3), transparent)", zIndex: 2 }} />
@@ -461,5 +461,6 @@ export default function GasShield() {
     </div>
   );
 }
+
 
 
