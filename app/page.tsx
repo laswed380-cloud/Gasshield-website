@@ -11,20 +11,21 @@ const LOGO = "data:image/webp;base64,UklGRjgFAABXRUJQVlA4ICwFAADwFwCdASpQAFAAPpl
 /* ═══ IMAGES — Pexels free photos (no copyright, free commercial use) ═══ */
 /* Pexels License: Free to use, no attribution required */
 const IMG = {
-  hero: "https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
-  stove1: "https://images.pexels.com/photos/6996084/pexels-photo-6996084.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  stove2: "https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  flame: "https://images.pexels.com/photos/6368848/pexels-photo-6368848.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  boiler: "https://images.pexels.com/photos/3846254/pexels-photo-3846254.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  factory: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  kitchen: "https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  cylinder: "https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  induction: "https://images.pexels.com/photos/6996088/pexels-photo-6996088.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  restaurant: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  pipes: "https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  hero: "https://images.pexels.com/photos/3229014/pexels-photo-3229014.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
+  stove1: "https://images.pexels.com/photos/3722212/pexels-photo-3722212.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  stove2: "https://images.pexels.com/photos/21661595/pexels-photo-21661595.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  flame: "https://images.pexels.com/photos/6126281/pexels-photo-6126281.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  boiler: "https://images.pexels.com/photos/372796/pexels-photo-372796.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  factory: "https://images.pexels.com/photos/28806603/pexels-photo-28806603.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  kitchen: "https://images.pexels.com/photos/30120987/pexels-photo-30120987.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  cylinder: "https://images.pexels.com/photos/11489637/pexels-photo-11489637.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  induction: "https://images.pexels.com/photos/7019014/pexels-photo-7019014.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  restaurant: "https://images.pexels.com/photos/5251019/pexels-photo-5251019.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  pipes: "https://images.pexels.com/photos/2310904/pexels-photo-2310904.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
   pellets: "https://images.pexels.com/photos/4489794/pexels-photo-4489794.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  warehouse: "https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-  engineer: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  warehouse: "https://images.pexels.com/photos/18885403/pexels-photo-18885403.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  engineer: "https://images.pexels.com/photos/8961126/pexels-photo-8961126.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+  tanker: "https://images.pexels.com/photos/9739039/pexels-photo-9739039.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
 };
 
 /* Fallback colors for product cards if images fail to load */
@@ -32,16 +33,16 @@ const PROD_COLORS = ["#2d5a1e","#3a7a28","#1a3c1a","#4a9a35","#2d5a1e","#3a7a28"
 const PROD_ICONS = ["🔥","🍳","🔧","🏭","♻️","⚗️","⚡","📦","🔄","🛢️"];
 
 const PRODUCTS = [
-  { name: "Ethanol Commercial Stove", cat: "Kitchen", tag: "Restaurants · Dhabas", desc: "Clean-burning, instant ignition. Drop-in LPG replacement with identical flame control. Zero soot, zero smoke.", img: IMG.stove1, badge: "Most Popular", price: "₹3,000 – ₹8,000" },
-  { name: "High-Capacity Multi-Burner", cat: "Kitchen", tag: "Hotels · Canteens", desc: "Industrial-grade multi-ring burner for high-volume cooking. Handles heavy wok, tandoor, and large vessel loads.", img: IMG.stove2, badge: "", price: "₹15,000 – ₹50,000" },
-  { name: "CNG/CBG Conversion Kit", cat: "Conversion", tag: "Any Existing LPG Setup", desc: "Convert existing LPG burners to CNG or compressed biogas. 2-hour install. PESO-aligned. Fully reversible.", img: IMG.cylinder, badge: "Quick Install", price: "₹8,000 – ₹25,000" },
-  { name: "Industrial Biomass Boiler", cat: "Industrial", tag: "Factories · Laundries", desc: "Complete boiler conversion from LPG/diesel to biomass pellets. 25-40% savings — highest of any alternative.", img: IMG.factory, badge: "Best Savings", price: "₹1,00,000 – ₹8,00,000" },
-  { name: "Biomass Pellet Storage & Feeder", cat: "Industrial", tag: "Factory Boilers", desc: "Automated hopper with screw-feed mechanism. 7-day storage capacity. Weather-sealed. Continuous fuel supply.", img: IMG.pellets, badge: "", price: "₹30,000 – ₹1,50,000" },
-  { name: "Methanol Industrial Burner", cat: "Industrial", tag: "Furnaces · Process Heat", desc: "High-temperature methanol combustion for industrial process heating. Made from Indian coal and biomass feedstock.", img: IMG.flame, badge: "", price: "₹50,000 – ₹3,00,000" },
-  { name: "Commercial Induction System", cat: "Kitchen", tag: "Hospitals · Modern Kitchens", desc: "Zero-fuel, zero-emission cooking. Complete independence from gas supply. Precise temperature control.", img: IMG.induction, badge: "Zero Fuel", price: "₹50,000 – ₹3,00,000" },
-  { name: "CNG Cascade Storage System", cat: "Industrial", tag: "Campuses · Hotels · Factories", desc: "High-pressure CNG/CBG cascade with auto-manifold switching. 250-bar storage. Direct bulk LPG replacement.", img: IMG.pipes, badge: "", price: "₹2,00,000 – ₹8,00,000" },
-  { name: "Dual-Fuel Hybrid System", cat: "Conversion", tag: "Hospitals · Hotels · Critical Ops", desc: "CBG/CNG primary + electric induction backup. Auto-switches on interruption. Guaranteed zero downtime.", img: IMG.engineer, badge: "Zero Downtime", price: "₹1,00,000 – ₹5,00,000" },
-  { name: "Ethanol Bulk Storage Tank", cat: "Industrial", tag: "Large Kitchens · Canteens", desc: "500L-2000L ethanol storage with safety valves, level indicator, and auto-feed to multiple stoves.", img: IMG.warehouse, badge: "", price: "₹40,000 – ₹2,00,000" },
+  { name: "Ethanol Commercial Burner", cat: "Kitchen", tag: "Restaurants · Dhabas", desc: "Clean-combustion ethanol burner with instant ignition and precision flame regulation. Direct drop-in LPG replacement — zero soot, zero particulate emissions.", img: IMG.stove1, badge: "Most Popular", price: "₹3,000 – ₹8,000" },
+  { name: "High-Capacity Multi-Burner", cat: "Kitchen", tag: "Hotels · Canteens", desc: "Industrial-grade multi-ring burner system engineered for high-throughput commercial cooking. Rated for heavy wok, tandoor, and large-vessel thermal loads.", img: IMG.stove2, badge: "", price: "₹15,000 – ₹50,000" },
+  { name: "CNG/CBG Conversion Kit", cat: "Conversion", tag: "Any Existing LPG Setup", desc: "Precision retrofit kit for converting LPG burners to CNG or compressed biogas operation. 2-hour installation, PESO-compliant, fully reversible.", img: IMG.cylinder, badge: "Quick Install", price: "₹8,000 – ₹25,000" },
+  { name: "Industrial Biomass Boiler", cat: "Industrial", tag: "Factories · Laundries", desc: "Complete boiler conversion from LPG/diesel to biomass pellet combustion. Delivers 25–40% fuel cost reduction — highest savings across all alternative fuel pathways.", img: IMG.factory, badge: "Best Savings", price: "₹1,00,000 – ₹8,00,000" },
+  { name: "Biomass Pellet Storage & Feeder", cat: "Industrial", tag: "Factory Boilers", desc: "Automated hopper system with screw-feed mechanism and 7-day storage capacity. Weather-sealed enclosure ensures continuous fuel delivery to combustion system.", img: IMG.pellets, badge: "", price: "₹30,000 – ₹1,50,000" },
+  { name: "Methanol Industrial Burner", cat: "Industrial", tag: "Furnaces · Process Heat", desc: "High-temperature methanol combustion system for industrial process heating. BIS IS 18698 compliant. Sourced from Indian coal and biomass feedstock.", img: IMG.flame, badge: "", price: "₹50,000 – ₹3,00,000" },
+  { name: "Commercial Induction System", cat: "Kitchen", tag: "Hospitals · Modern Kitchens", desc: "Zero-combustion, zero-emission electric cooking system. Full independence from fuel supply chains with precision temperature regulation across all cooking modes.", img: IMG.induction, badge: "Zero Fuel", price: "₹50,000 – ₹3,00,000" },
+  { name: "CNG Cascade Storage System", cat: "Industrial", tag: "Campuses · Hotels · Factories", desc: "High-pressure CNG/CBG cascade storage at 250 bar with auto-manifold switching. Engineered as a direct volumetric replacement for bulk LPG installations.", img: IMG.pipes, badge: "", price: "₹2,00,000 – ₹8,00,000" },
+  { name: "Dual-Fuel Hybrid System", cat: "Conversion", tag: "Hospitals · Hotels · Critical Ops", desc: "CBG/CNG primary fuel line with electric induction backup. Automatic switchover on supply interruption — engineered for guaranteed zero-downtime operation.", img: IMG.engineer, badge: "Zero Downtime", price: "₹1,00,000 – ₹5,00,000" },
+  { name: "Ethanol Bulk Storage Vessel", cat: "Industrial", tag: "Large Kitchens · Canteens", desc: "500L–2000L ethanol storage vessel with integrated safety valves, level indication, and auto-feed distribution to multiple burner connection points.", img: IMG.warehouse, badge: "", price: "₹40,000 – ₹2,00,000" },
 ];
 
 const FUELS = [
@@ -54,14 +55,14 @@ const FUELS = [
 ];
 
 const FAQS = [
-  { q: "What alternatives to LPG do you offer?", a: "We supply CBG (Compressed Biogas), ethanol, methanol, biomass pellets, and commercial induction systems. Our AI advisor helps you choose the right one for your specific setup." },
-  { q: "Can you convert my existing stoves and burners?", a: "Yes — this is our core strength. We modify your existing LPG equipment to run on alternative fuels. Most cases don't require replacing your equipment. We also supply brand new systems." },
-  { q: "How quickly can you get my business running?", a: "Kitchen conversions: 24-72 hours. Factory boilers: 3-7 days. We prepare everything off-site to minimize your downtime." },
-  { q: "Will the fuel change affect my food quality?", a: "Not at all. CBG and ethanol produce clean, consistent heat identical to LPG. Our technicians calibrate your equipment to match your existing flame profiles perfectly." },
-  { q: "How much will I actually save?", a: "15-40% on fuel costs depending on the fuel type. Biomass pellets offer the highest savings. We calculate exact savings before you commit — no surprises." },
-  { q: "Do you supply fuel on an ongoing basis?", a: "Yes. Monthly supply contracts with guaranteed delivery. Most clients choose 6-12 month agreements. You never have to worry about sourcing fuel yourself." },
-  { q: "What is methanol and is it safe?", a: "Methanol is a clean-burning industrial fuel produced from Indian coal or biomass. BIS has issued standards for its use. Our systems include all required safety mechanisms." },
-  { q: "Do you serve areas outside Bangalore?", a: "Currently focused on Bangalore and surrounding industrial areas. Expanding to Chennai, Hyderabad, and Pune within 6 months." },
+  { q: "What alternative fuels does Gas Shield support?", a: "We engineer transitions to CBG (Compressed Biogas), CNG, ethanol, methanol, biomass pellets, and commercial induction systems. Our AI assessment tool evaluates your specific operational parameters to recommend the optimal fuel pathway." },
+  { q: "Can existing LPG equipment be retrofitted?", a: "Yes — retrofit engineering is our core competency. We modify existing LPG burners, stoves, and boilers to operate on alternative fuels without full equipment replacement. We also supply and commission new purpose-built systems." },
+  { q: "What is the typical conversion timeline?", a: "Commercial kitchen conversions: 24–72 hours. Industrial boiler retrofits: 3–7 days. All fabrication and pre-assembly is completed off-site to minimise operational downtime during installation." },
+  { q: "Does the fuel transition affect cooking output or food quality?", a: "No measurable impact. CBG and ethanol deliver clean, consistent thermal output identical to LPG. Our engineers calibrate each installation to match existing flame profiles and heat distribution." },
+  { q: "What cost savings can be expected?", a: "15–40% reduction in fuel expenditure depending on fuel type and consumption volume. Biomass pellets deliver the highest margin. We provide a detailed cost-benefit analysis before any commitment." },
+  { q: "Is ongoing fuel supply included?", a: "Yes. We offer monthly supply contracts with guaranteed delivery logistics. Most clients operate on 6–12 month agreements with fixed pricing and priority scheduling." },
+  { q: "What is methanol and what are the safety requirements?", a: "Methanol is a high-temperature industrial fuel produced from Indian coal or biomass feedstock. BIS IS 18698 governs its use. All Gas Shield methanol systems include mandatory safety interlocks, ventilation specs, and flame-detection controls." },
+  { q: "What geographies does Gas Shield currently serve?", a: "Currently operational across Bangalore and surrounding industrial corridors. Expansion to Chennai, Hyderabad, and Pune is scheduled within the next two quarters." },
 ];
 
 const CONVERSIONS = [
@@ -105,24 +106,62 @@ export default function GasShield() {
 
   useEffect(() => { const h = () => { setScrolled(window.scrollY > 50); setShowTop(window.scrollY > 500); }; window.addEventListener("scroll", h); return () => window.removeEventListener("scroll", h); }, []);
   const go = (id: string) => { document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); setMenuOpen(false); };
-  const nav = [{ l: "Solutions", id: "solutions" }, { l: "Products", id: "products" }, { l: "Fuel Compare", id: "compare" }, { l: "Packages", id: "packages" }, { l: "Contact", id: "contact" }];
+  const nav = [{ l: "Services", id: "solutions" }, { l: "Catalogue", id: "products" }, { l: "Fuel Data", id: "compare" }, { l: "Plans", id: "packages" }, { l: "Contact", id: "contact" }];
   const prods = prodCat === "All" ? PRODUCTS : PRODUCTS.filter(p => p.cat === prodCat);
 
   const runAssess = () => {
     if (!aiForm.biz || !aiForm.fuel) return;
     setAiLoad(true); setAiResult(null);
     setTimeout(() => {
-      const f = aiForm.biz === "Factory", h = aiForm.biz === "Hotel" || aiForm.biz === "Hospital", hi = aiForm.vol > 50;
-      setAiResult({
-        fuel: f ? "Biomass Pellets" : h ? "CBG" : "Ethanol",
-        why: f ? "Lowest cost per unit heat for industrial boilers" : h ? "Clean combustion identical to LPG" : "Clean-burning, instant ignition, minimal changes",
-        alt: f ? "Methanol · CBG" : h ? "Ethanol · Hybrid" : "CBG · Induction",
-        cost: f ? (hi ? "₹5L – ₹15L" : "₹1.5L – ₹5L") : h ? "₹1L – ₹4L" : hi ? "₹40K – ₹1.2L" : "₹15K – ₹60K",
-        save: f ? "₹80K – ₹3L/mo" : h ? "₹30K – ₹1.5L/mo" : hi ? "₹15K – ₹60K/mo" : "₹5K – ₹20K/mo",
-        time: f ? "5-7 days" : "2-4 days", payback: f ? "3-6 months" : "4-8 months",
-      });
+      const biz = aiForm.biz;
+      const vol = aiForm.vol;
+      const isFactory = biz === "Factory";
+      const isHotel = biz === "Hotel";
+      const isHospital = biz === "Hospital";
+      const isLaundry = biz === "Laundry";
+      const isIndustrial = isFactory || isLaundry;
+      const isHighVol = vol > 50;
+      const isMedVol = vol > 15;
+
+      let fuel: string, why: string, alt: string, cost: string, save: string, time: string, payback: string;
+
+      if (isIndustrial) {
+        fuel = isHighVol ? "Biomass Pellets" : "Methanol";
+        why = isHighVol ? "Lowest cost per unit heat (3,500–4,200 kcal/kg). 25–40% savings on boiler operations — highest margin across all alternatives" : "High-temperature combustion (1,870°C) with low NOx. BIS IS 18698 compliant. Ideal for process heating applications";
+        alt = isHighVol ? "Methanol · CBG Cascade" : "Biomass · CBG";
+        cost = isHighVol ? "₹5L – ₹15L" : vol > 30 ? "₹2L – ₹6L" : "₹1L – ₹4L";
+        save = isHighVol ? "₹80K – ₹3L/mo" : vol > 30 ? "₹40K – ₹1.5L/mo" : "₹20K – ₹80K/mo";
+        time = isHighVol ? "5–7 days" : "3–5 days";
+        payback = isHighVol ? "3–5 months" : "4–7 months";
+      } else if (isHospital) {
+        fuel = "Dual-Fuel Hybrid (CBG + Induction)";
+        why = "Zero-downtime architecture with automatic fuel switchover. Critical for healthcare facilities requiring uninterrupted thermal supply";
+        alt = "CNG Cascade · Full Induction";
+        cost = isMedVol ? "₹2L – ₹5L" : "₹1L – ₹3L";
+        save = isMedVol ? "₹40K – ₹1.5L/mo" : "₹15K – ₹60K/mo";
+        time = "5–7 days";
+        payback = "5–8 months";
+      } else if (isHotel) {
+        fuel = isHighVol ? "CNG/CBG Cascade" : "CBG";
+        why = isHighVol ? "Centralised high-pressure supply (250 bar) feeding multiple kitchen points. Identical LPG flame behaviour with 10–20% cost reduction" : "Clean combustion identical to LPG. Renewable, SATAT-backed supply. Drop-in conversion for existing burners";
+        alt = isHighVol ? "Ethanol · Hybrid System" : "Ethanol · Induction";
+        cost = isHighVol ? "₹3L – ₹8L" : "₹80K – ₹2.5L";
+        save = isHighVol ? "₹50K – ₹2L/mo" : "₹20K – ₹80K/mo";
+        time = isHighVol ? "4–6 days" : "2–4 days";
+        payback = "4–7 months";
+      } else {
+        fuel = "Ethanol";
+        why = "Lowest conversion cost with instant ignition and zero particulate emissions. Drop-in replacement requiring minimal equipment modification";
+        alt = isMedVol ? "CBG · CNG" : "Induction · CBG";
+        cost = isHighVol ? "₹40K – ₹1.5L" : isMedVol ? "₹15K – ₹60K" : "₹8K – ₹30K";
+        save = isHighVol ? "₹20K – ₹80K/mo" : isMedVol ? "₹10K – ₹40K/mo" : "₹5K – ₹20K/mo";
+        time = "1–3 days";
+        payback = "3–6 months";
+      }
+
+      setAiResult({ fuel, why, alt, cost, save, time, payback });
       setAiLoad(false);
-    }, 2000);
+    }, 1800);
   };
 
   function Sec({ children, id, bg, style: s }: SectionProps) {
@@ -140,7 +179,7 @@ export default function GasShield() {
 
   return (
     <div style={{ fontFamily: "'DM Sans',-apple-system,sans-serif", color: C.body, background: C.bg }}>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');html{scroll-behavior:smooth}*{margin:0;padding:0;box-sizing:border-box}::selection{background:${C.gL};color:${C.g1}}input,select,textarea,button{font-family:inherit}input:focus,select:focus,textarea:focus{outline:2px solid ${C.g3};outline-offset:2px}@media(max-width:768px){.dsk{display:none!important}.mob{display:flex!important}.grid2{grid-template-columns:1fr!important}.grid3{grid-template-columns:1fr!important}.grid5{grid-template-columns:repeat(3,1fr)!important}}img{display:block;max-width:100%}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pdot{0%,100%{opacity:1}50%{opacity:.3}}`}</style>
+      <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');html{scroll-behavior:smooth}*{margin:0;padding:0;box-sizing:border-box}::selection{background:${C.gL};color:${C.g1}}input,select,textarea,button{font-family:inherit}input:focus,select:focus,textarea:focus{outline:2px solid ${C.g3};outline-offset:2px}@media(max-width:768px){.dsk{display:none!important}.mob{display:flex!important}.grid2{grid-template-columns:1fr!important}.grid3{grid-template-columns:1fr!important}.grid5{grid-template-columns:repeat(3,1fr)!important}}img{display:block;max-width:100%}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pdot{0%,100%{opacity:1}50%{opacity:.3}}h1,h2,h3,h4{font-family:'Inter','DM Sans',sans-serif;letter-spacing:-0.02em}table th{font-family:'Inter','DM Sans',sans-serif}`}</style>
 
       {/* NAV */}
       <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, padding: "10px 24px", background: scrolled ? "rgba(255,255,255,0.97)" : "rgba(255,255,255,0.5)", boxShadow: scrolled ? "0 1px 6px rgba(26,60,26,0.06)" : "none", transition: "all 0.3s", backdropFilter: "blur(12px)" }}>
@@ -171,15 +210,15 @@ export default function GasShield() {
             <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(58,122,40,0.08)", border: "1px solid rgba(58,122,40,0.15)", borderRadius: 20, padding: "5px 14px", fontSize: 11, fontWeight: 700, color: C.g3, letterSpacing: 2, textTransform: "uppercase", marginBottom: 20 }}>
               <Heart size={12} fill={C.g3} /> We Stand With Indian Businesses
             </div>
-            <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, color: C.g1, lineHeight: 1.12, marginBottom: 16 }}>Your Business Doesn't Stop.<br /><span style={{ color: C.g3 }}>We Make Sure of It.</span></h1>
-            <p style={{ fontSize: 17, color: C.body, lineHeight: 1.75, marginBottom: 12 }}>During this energy crisis, we're standing alongside Indian restaurants, hotels, and factories — converting existing stoves to alternative fuels and guaranteeing supply within 72 hours.</p>
+            <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, color: C.g1, lineHeight: 1.12, marginBottom: 16 }}>Alternative Fuel Engineering<br /><span style={{ color: C.g3 }}>for Indian Industry.</span></h1>
+            <p style={{ fontSize: 17, color: C.body, lineHeight: 1.75, marginBottom: 12 }}>We engineer fuel transitions for commercial kitchens, hotels, and industrial facilities — converting existing equipment to alternative fuels and guaranteeing supply commissioning within 72 hours.</p>
             <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, fontStyle: "italic", marginBottom: 28 }}>"Aap akele nahi hain. Hum aapke saath hain." — You're not alone. We are with you.</p>
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 28 }}>
               <button onClick={() => go("advisor")} style={btn1}>Get Free Assessment <ArrowRight size={16} /></button>
               <a href="tel:+918147644747" style={{ ...btn2, textDecoration: "none" }}><Phone size={16} /> +91 8147644747</a>
             </div>
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-              {["🏭 50+ Businesses Served", "⚡ 72-Hour Conversion", "🇮🇳 100% Indian Supply", "💰 Save 15-40%"].map((b, i) => <span key={i} style={{ padding: "5px 12px", borderRadius: 16, background: "rgba(255,255,255,0.8)", border: `1px solid ${C.border}`, fontSize: 11, fontWeight: 600, color: C.g1 }}>{b}</span>)}
+              {["50+ Facilities Converted", "72-Hour Commissioning", "100% Indian Supply Chain", "15–40% Cost Reduction"].map((b, i) => <span key={i} style={{ padding: "6px 14px", borderRadius: 20, background: "rgba(255,255,255,0.9)", border: `1px solid ${C.border}`, fontSize: 11, fontWeight: 600, color: C.g1, backdropFilter: "blur(4px)" }}>{b}</span>)}
             </div>
           </div>
         </div>
@@ -189,7 +228,7 @@ export default function GasShield() {
       <div style={{ background: `linear-gradient(135deg, ${C.g2}, ${C.g1})`, padding: "20px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
           <Heart size={20} color={C.gold} fill={C.gold} />
-          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", flex: 1, lineHeight: 1.6 }}><strong style={{ color: "#fff" }}>To every restaurant owner, factory manager, and hotel operator affected by the LPG crisis:</strong> We understand your pain. Your business is your family's livelihood. Gas Shield is here — not just as a vendor, but as your energy partner. We won't rest until you're running again.</p>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", flex: 1, lineHeight: 1.6 }}><strong style={{ color: "#fff" }}>To every restaurant owner, factory manager, and hotel operator navigating the energy transition:</strong> Gas Shield operates as your dedicated energy engineering partner — not just a vendor. We are committed to ensuring operational continuity for every client we serve.</p>
           <button onClick={() => go("contact")} style={{ padding: "8px 16px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.3)", background: "rgba(255,255,255,0.1)", color: "#fff", fontSize: 12, fontWeight: 600, cursor: "pointer", whiteSpace: "nowrap" }}>Talk to Us →</button>
         </div>
       </div>
@@ -197,14 +236,14 @@ export default function GasShield() {
       {/* THREE PILLARS */}
       <Sec id="solutions" bg={C.off}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Three Ways We Keep You Running</h2>
-          <p style={{ fontSize: 15, color: C.muted, maxWidth: 600, margin: "0 auto" }}>Fuel delivery, system conversion, or AI guidance — choose what you need today.</p>
+          <h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Core Engineering Services</h2>
+          <p style={{ fontSize: 15, color: C.muted, maxWidth: 600, margin: "0 auto" }}>End-to-end fuel supply, system conversion engineering, and intelligent energy advisory — tailored to your operational requirements.</p>
         </div>
         <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
           {[
-            { icon: <Truck size={24} color={C.g2} />, t: "Fuel Delivery", b: "CBG, CNG, ethanol, methanol, biomass pellets — from verified Indian producers to your doorstep. Monthly contracts with guaranteed delivery.", f: "Never worry about supply again", img: IMG.cylinder, emoji: "🚛" },
-            { icon: <Wrench size={24} color={C.g2} />, t: "72-Hour Conversion", b: "We convert your existing stoves, burners, and boilers — or install brand new systems. Minimal downtime, maximum savings.", f: "Existing + New systems", img: IMG.stove1, emoji: "🔧" },
-            { icon: <Sparkles size={24} color={C.g2} />, t: "AI Energy Advisor", b: "Chat with our AI advisor about anything — fuel options, costs, business advice, or just to talk. We're here 24/7.", f: "Not just estimates — real guidance", img: IMG.kitchen, emoji: "🤖" },
+            { icon: <Truck size={24} color={C.g2} />, t: "Fuel Supply & Logistics", b: "CBG, CNG, ethanol, methanol, and biomass pellets — sourced from verified Indian producers. Guaranteed monthly delivery contracts with 48-hour fulfilment.", f: "Uninterrupted supply chain", img: IMG.tanker, emoji: "🚛" },
+            { icon: <Wrench size={24} color={C.g2} />, t: "Conversion Engineering", b: "On-site retrofit of existing stoves, burners, and boilers to alternative fuel operation — or turnkey installation of new systems. Minimal operational downtime.", f: "72-hour turnaround", img: IMG.stove1, emoji: "🔧" },
+            { icon: <Sparkles size={24} color={C.g2} />, t: "AI Energy Assessment", b: "Intelligent fuel analysis covering compatibility modelling, cost projection, and conversion pathways. Available 24/7 for technical guidance and next-step planning.", f: "Data-driven recommendations", img: IMG.kitchen, emoji: "🤖" },
           ].map((c, i) => (
             <div key={i} style={{ ...card, overflow: "hidden", transition: "all 0.3s" }} onMouseOver={e => { e.currentTarget.style.boxShadow = SH2; e.currentTarget.style.transform = "translateY(-4px)"; }} onMouseOut={e => { e.currentTarget.style.boxShadow = SH; e.currentTarget.style.transform = ""; }}>
               <div style={{ height: 140, overflow: "hidden", background: `linear-gradient(135deg, ${C.g2}15, ${C.g3}10)`, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
@@ -223,7 +262,7 @@ export default function GasShield() {
 
       {/* AI ADVISOR */}
       <Sec id="advisor">
-        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8 }}>AI-POWERED</div><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Your Free Energy Assessment</h2><p style={{ fontSize: 15, color: C.muted, maxWidth: 540, margin: "0 auto" }}>Tell us your setup. Get instant recommendations — or open the AI Gas Specialist for fuel guidance, conversion questions, and next steps.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8 }}>AI-POWERED</div><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Instant Energy Assessment</h2><p style={{ fontSize: 15, color: C.muted, maxWidth: 540, margin: "0 auto" }}>Input your operational parameters. Receive an engineered fuel recommendation — or consult the AI Gas Specialist for detailed technical guidance.</p></div>
         <div className="grid2" style={{ display: "grid", gridTemplateColumns: aiResult || aiLoad ? "1fr 1fr" : "1fr", gap: 28, maxWidth: 920, margin: "0 auto" }}>
           <div style={{ ...card, padding: 28 }}>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -248,7 +287,7 @@ export default function GasShield() {
 
       {/* PRODUCTS */}
       <Sec id="products" bg={C.off}>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Equipment & Conversion Solutions</h2><p style={{ fontSize: 15, color: C.muted }}>Real stoves, real burners, real boilers — converting Indian businesses every day.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Equipment & Conversion Catalogue</h2><p style={{ fontSize: 15, color: C.muted }}>Engineered solutions for commercial kitchens, industrial boilers, and process heating — deployed across Indian businesses daily.</p></div>
         <div style={{ display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>{["All", "Kitchen", "Industrial", "Conversion"].map(f => <button key={f} onClick={() => setProdCat(f)} style={pill(prodCat === f)}>{f}</button>)}</div>
         <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
           {prods.map((p, pi) => {
@@ -276,20 +315,20 @@ export default function GasShield() {
         </div>
         <div style={{ marginTop: 24, padding: 20, background: C.goldL, borderRadius: R, border: `1px solid ${C.gold}30`, textAlign: "center" }}>
           <p style={{ fontSize: 13, color: C.body, lineHeight: 1.7, marginBottom: 6 }}>
-            <strong style={{ color: C.g1 }}>These prices are tentative estimates</strong> based on standard configurations. Your actual cost may be lower depending on your setup.
+            <strong style={{ color: C.g1 }}>Indicative pricing</strong> based on standard configurations. Final cost determined after site assessment and engineering review.
           </p>
           <p style={{ fontSize: 13, color: C.body, lineHeight: 1.7, marginBottom: 8 }}>
-            For an instant, personalized quote — try our <strong style={{ color: C.g3, cursor: "pointer" }} onClick={() => go("advisor")}>AI Fuel Advisor</strong> or <strong style={{ color: C.g3, cursor: "pointer" }} onClick={() => go("contact")}>Instant Assessment</strong> tool above.
+            For a personalised estimate — use our <strong style={{ color: C.g3, cursor: "pointer" }} onClick={() => go("advisor")}>AI Energy Assessment</strong> tool or <strong style={{ color: C.g3, cursor: "pointer" }} onClick={() => go("contact")}>request a consultation</strong>.
           </p>
           <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, fontStyle: "italic" }}>
-            We will be happy to work with you to reduce costs even further as we navigate this emergency — united, together. 🙏
+            Volume-based and contract-term pricing available for long-term partnerships.
           </p>
         </div>
       </Sec>
 
       {/* FUEL COMPARISON TABLE */}
       <Sec id="compare">
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Fuel Comparison — Technical Specs</h2><p style={{ fontSize: 15, color: C.muted }}>Every fuel compared side-by-side. Data-driven decisions for your business.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Fuel Performance Specifications</h2><p style={{ fontSize: 15, color: C.muted }}>Side-by-side technical comparison across all supported fuel types. Engineer your transition with data.</p></div>
         <div style={{ overflowX: "auto" }}>
           <table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0 3px", minWidth: 800, fontSize: 13 }}>
             <thead><tr style={{ background: C.g2 }}>{["Fuel", "Full Name", "Energy", "Flame Temp", "Savings vs LPG", "Best For", "Storage", "Safety", "Availability"].map(h => <th key={h} style={{ padding: "12px 10px", textAlign: "left", fontSize: 10, fontWeight: 700, color: "#fff", textTransform: "uppercase", letterSpacing: 1 }}>{h}</th>)}</tr></thead>
@@ -312,7 +351,7 @@ export default function GasShield() {
 
       {/* INDUSTRY-FUEL MATCHING — Which fuel fits which business */}
       <Sec bg={C.off}>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Which Fuel Fits Your Business?</h2><p style={{ fontSize: 15, color: C.muted }}>Every business is different. Here is our recommended fuel by industry type, capacity, and application.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Industry-Specific Fuel Mapping</h2><p style={{ fontSize: 15, color: C.muted }}>Recommended fuel pathways mapped by industry segment, thermal capacity, and operational application.</p></div>
         <div style={{ overflowX: "auto" }}>
           <table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0 3px", minWidth: 900, fontSize: 13 }}>
             <thead><tr style={{ background: C.g2 }}>{["Industry", "Application", "Capacity", "Recommended Fuel", "Heat Output", "Why This Fuel", "System Type"].map(h => <th key={h} style={{ padding: "12px 8px", textAlign: "left", fontSize: 10, fontWeight: 700, color: "#fff", textTransform: "uppercase", letterSpacing: 1 }}>{h}</th>)}</tr></thead>
@@ -343,14 +382,14 @@ export default function GasShield() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }} className="grid2">
           <div style={{ ...card, padding: 28, borderLeft: `4px solid ${C.g3}` }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}><Users size={22} color={C.g3} /><h3 style={{ fontSize: 18, fontWeight: 700, color: C.g1 }}>To Our Suppliers & Partners</h3></div>
-            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>We understand that trust is earned, not demanded. Gas Shield is committed to being the kind of partner you want to work with — transparent, reliable, and growth-oriented.</p>
-            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>We pay on time. We communicate clearly. We bring guaranteed volume because our clients are signed and waiting. When you grow, we grow. This is a long-term partnership, not a one-time transaction.</p>
-            <p style={{ fontSize: 13, color: C.g3, fontWeight: 600, fontStyle: "italic" }}>"Your fuel powers Indian businesses. Our platform ensures it reaches them. Together, we are building India's energy resilience."</p>
+            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>Gas Shield operates on a foundation of operational transparency, payment reliability, and mutual growth. We are committed to building partnerships that scale with your capacity.</p>
+            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>We deliver on payment terms. We communicate proactively. We bring committed offtake volume from signed clients across multiple industry verticals. When your supply grows, our reach expands.</p>
+            <p style={{ fontSize: 13, color: C.g3, fontWeight: 600, fontStyle: "italic" }}>"Your fuel powers Indian businesses. Our engineering platform ensures it reaches them. Together, we are building India's energy resilience."</p>
           </div>
           <div style={{ ...card, padding: 28, borderLeft: `4px solid ${C.gold}` }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}><Heart size={22} color={C.gold} fill={C.gold} /><h3 style={{ fontSize: 18, fontWeight: 700, color: C.g1 }}>To Our Clients</h3></div>
-            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>We know this crisis isn't just about fuel — it's about your employees' livelihoods, your family's security, and the community that depends on your business staying open.</p>
-            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>Gas Shield exists because of you. We will not rest until your kitchen is cooking, your factory is running, and your business is thriving again. We are available 24/7 during this crisis.</p>
+            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>Your operation is more than a facility — it represents livelihoods, families, and communities that depend on continuity. We understand the urgency behind every transition request.</p>
+            <p style={{ fontSize: 14, color: C.body, lineHeight: 1.8, marginBottom: 12 }}>Gas Shield exists to keep your kitchen cooking, your factory producing, and your business operating without interruption. Our engineering and support teams are available 24/7.</p>
             <p style={{ fontSize: 13, color: C.gold, fontWeight: 600, fontStyle: "italic" }}>"Aap akele nahi hain. Hum aapke saath hain, aaj bhi aur kal bhi." — You are not alone. We are with you, today and tomorrow.</p>
           </div>
         </div>
@@ -378,9 +417,9 @@ export default function GasShield() {
 
       {/* CONVERSION TABLE */}
       <Sec>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Conversion Services</h2><p style={{ fontSize: 15, color: C.muted }}>From assessment to ongoing fuel supply — we handle everything.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Conversion Engineering Process</h2><p style={{ fontSize: 15, color: C.muted }}>From site assessment through commissioning to ongoing fuel supply — a fully managed conversion lifecycle.</p></div>
         <div className="grid5" style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 14, marginBottom: 36 }}>
-          {[{ n: "1", icon: <ClipboardList size={18} color={C.g2} />, t: "Assess" }, { n: "2", icon: <Lightbulb size={18} color={C.g2} />, t: "Recommend" }, { n: "3", icon: <Wrench size={18} color={C.g2} />, t: "Convert" }, { n: "4", icon: <Truck size={18} color={C.g2} />, t: "Supply" }, { n: "5", icon: <Headphones size={18} color={C.g2} />, t: "Support" }].map((s, i) => <div key={i} style={{ textAlign: "center" }}><div style={{ width: 40, height: 40, borderRadius: 10, background: C.gL, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 6px", position: "relative" }}>{s.icon}<span style={{ position: "absolute", top: -3, right: -3, width: 16, height: 16, borderRadius: "50%", background: C.g2, color: "#fff", fontSize: 9, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{s.n}</span></div><span style={{ fontSize: 12, fontWeight: 600, color: C.g1 }}>{s.t}</span></div>)}
+          {[{ n: "1", icon: <ClipboardList size={18} color={C.g2} />, t: "Site Audit" }, { n: "2", icon: <Lightbulb size={18} color={C.g2} />, t: "Engineering Spec" }, { n: "3", icon: <Wrench size={18} color={C.g2} />, t: "Install & Commission" }, { n: "4", icon: <Truck size={18} color={C.g2} />, t: "Fuel Supply" }, { n: "5", icon: <Headphones size={18} color={C.g2} />, t: "Ongoing Support" }].map((s, i) => <div key={i} style={{ textAlign: "center" }}><div style={{ width: 40, height: 40, borderRadius: 10, background: C.gL, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 6px", position: "relative" }}>{s.icon}<span style={{ position: "absolute", top: -3, right: -3, width: 16, height: 16, borderRadius: "50%", background: C.g2, color: "#fff", fontSize: 9, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{s.n}</span></div><span style={{ fontSize: 12, fontWeight: 600, color: C.g1 }}>{s.t}</span></div>)}
         </div>
         <div style={{ overflowX: "auto" }}><table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0 3px", minWidth: 500, fontSize: 13 }}><thead><tr>{["From", "To", "Best For", "Timeline", "Savings"].map(h => <th key={h} style={{ padding: "10px 12px", textAlign: "left", fontSize: 10, fontWeight: 700, color: C.muted, textTransform: "uppercase", letterSpacing: 1 }}>{h}</th>)}</tr></thead><tbody>{CONVERSIONS.map((c, i) => <tr key={i} style={{ background: i % 2 === 0 ? C.gL : C.white }}><td style={{ padding: "10px 12px", fontWeight: 600, color: C.g1, borderRadius: `${R}px 0 0 ${R}px` }}>{c.from}</td><td style={{ padding: "10px 12px", fontWeight: 700, color: C.g3 }}>{c.to}</td><td style={{ padding: "10px 12px", color: C.body }}>{c.best}</td><td style={{ padding: "10px 12px", color: C.body }}>{c.time}</td><td style={{ padding: "10px 12px", fontWeight: 700, color: C.g3, borderRadius: `0 ${R}px ${R}px 0` }}>{c.save}</td></tr>)}</tbody></table></div>
       </Sec>
@@ -388,24 +427,24 @@ export default function GasShield() {
       {/* TRUST */}
       <Sec bg={C.off}>
         <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20, textAlign: "center", marginBottom: 32 }}>
-          {[{ n: "50+", l: "Businesses Served" }, { n: "72 hrs", l: "Avg. Conversion" }, { n: "15-40%", l: "Cost Savings" }].map((s, i) => <div key={i}><div style={{ fontSize: 36, fontWeight: 800, color: C.g2 }}>{s.n}</div><div style={{ fontSize: 13, color: C.muted }}>{s.l}</div></div>)}
+          {[{ n: "50+", l: "Facilities Commissioned" }, { n: "72 hrs", l: "Avg. Conversion Time" }, { n: "15–40%", l: "Fuel Cost Reduction" }].map((s, i) => <div key={i}><div style={{ fontSize: 36, fontWeight: 800, color: C.g2 }}>{s.n}</div><div style={{ fontSize: 13, color: C.muted }}>{s.l}</div></div>)}
         </div>
         <div style={{ maxWidth: 640, margin: "0 auto", ...card, borderLeft: `3px solid ${C.gold}`, padding: 22 }}>
           <p style={{ fontSize: 15, color: C.g1, fontStyle: "italic", lineHeight: 1.7, marginBottom: 8 }}>"We were days away from shutting our kitchen. Gas Shield converted our existing burners to ethanol in 48 hours. Food quality is identical — our customers didn't notice any difference."</p>
           <span style={{ fontSize: 12, fontWeight: 600, color: C.muted }}>— Restaurant Owner, Koramangala, Bangalore</span>
         </div>
-        <div style={{ display: "flex", gap: 10, justifyContent: "center", marginTop: 20 }}>{["🇮🇳 Made in India", "🔧 PESO-Aligned", "🌱 Clean Energy"].map((b, i) => <span key={i} style={{ padding: "6px 14px", borderRadius: 8, background: C.gL, fontSize: 12, fontWeight: 600, color: C.g2 }}>{b}</span>)}</div>
+        <div style={{ display: "flex", gap: 10, justifyContent: "center", marginTop: 20 }}>{["Made in India", "PESO-Compliant", "Clean Energy Certified"].map((b, i) => <span key={i} style={{ padding: "6px 14px", borderRadius: 8, background: C.gL, fontSize: 12, fontWeight: 600, color: C.g2, border: `1px solid ${C.border}` }}>{b}</span>)}</div>
       </Sec>
 
       {/* FAQ */}
       <Sec>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1 }}>Common Questions</h2></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1 }}>Frequently Asked Questions</h2></div>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>{FAQS.map((f, i) => <div key={i} style={{ borderBottom: `1px solid ${C.border}` }}><button onClick={() => setFaqOpen(faqOpen === i ? null : i)} style={{ width: "100%", padding: "16px 0", display: "flex", justifyContent: "space-between", alignItems: "center", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}><span style={{ fontSize: 14, fontWeight: 600, color: C.g1, paddingRight: 16 }}>{f.q}</span>{faqOpen === i ? <ChevronUp size={16} color={C.muted} /> : <ChevronDown size={16} color={C.muted} />}</button>{faqOpen === i && <div style={{ padding: "0 0 16px", fontSize: 13, color: C.body, lineHeight: 1.7 }}>{f.a}</div>}</div>)}</div>
       </Sec>
 
       {/* CONTACT */}
       <Sec id="contact" bg={C.off}>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Let's Talk</h2><p style={{ fontSize: 15, color: C.muted }}>No obligation. No pressure. Just a conversation about what's right for your business.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Request a Consultation</h2><p style={{ fontSize: 15, color: C.muted }}>No obligation. Share your requirements and our engineering team will respond within 2–4 hours.</p></div>
         <div className="grid2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 28, maxWidth: 920, margin: "0 auto" }}>
           <div style={{ ...card, padding: 24 }}>
             {formDone ? <div style={{ textAlign: "center", padding: 40 }}><CheckCircle size={40} color={C.g3} style={{ margin: "0 auto 12px" }} /><h3 style={{ fontSize: 18, fontWeight: 700, color: C.g1, marginBottom: 6 }}>Thank you!</h3><p style={{ fontSize: 14, color: C.body }}>We'll call within 2-4 hours. For immediate help: <strong>+91 8147644747</strong></p></div> : (
@@ -425,7 +464,7 @@ export default function GasShield() {
               { icon: <Mail size={18} color={C.g2} />, l: "Email", v: "operations@gasshieldsolutions.com" },
               { icon: <MapPin size={18} color={C.g2} />, l: "Office", v: "HP No.51(1), 5th Main Rd, 5th Block, Jayanagar, Bangalore - 560041" },
             ].map((c, i) => <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}><div style={{ width: 40, height: 40, borderRadius: 10, background: C.gL, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{c.icon}</div><div><div style={{ fontSize: 11, color: C.muted, fontWeight: 600 }}>{c.l}</div><div style={{ fontSize: 14, fontWeight: 600, color: C.g1 }}>{c.v}</div></div></div>)}
-            <div style={{ ...card, padding: 16, borderLeft: `3px solid ${C.gold}`, marginTop: 8 }}><p style={{ fontSize: 13, color: C.body, fontStyle: "italic" }}>"We typically respond within 2-4 hours. For emergencies, call directly — we answer 24/7 during the crisis."</p></div>
+            <div style={{ ...card, padding: 16, borderLeft: `3px solid ${C.gold}`, marginTop: 8 }}><p style={{ fontSize: 13, color: C.body, fontStyle: "italic" }}>"Typical response time: 2–4 hours. For urgent requirements, call directly — our engineering team operates 24/7."</p></div>
           </div>
         </div>
       </Sec>
@@ -433,7 +472,7 @@ export default function GasShield() {
       {/* FOOTER */}
       <footer style={{ background: C.g1, padding: "44px 24px 20px", color: "rgba(255,255,255,0.6)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 28, marginBottom: 24 }} className="grid3">
-          <div><div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}><img src={LOGO} alt="Logo" style={{ width: 24, height: 24 }} /><span style={{ fontSize: 15, fontWeight: 700, color: "#fff" }}>Gas Shield Solutions</span></div><p style={{ fontSize: 12, lineHeight: 1.6 }}>India's Alternative Energy Platform<br />www.gasshieldsolutions.com</p></div>
+          <div><div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}><img src={LOGO} alt="Logo" style={{ width: 24, height: 24 }} /><span style={{ fontSize: 15, fontWeight: 700, color: "#fff" }}>Gas Shield Solutions</span></div><p style={{ fontSize: 12, lineHeight: 1.6 }}>Alternative Fuel Engineering for Indian Industry<br />www.gasshieldsolutions.com</p></div>
           <div><div style={{ fontSize: 12, fontWeight: 600, color: "#fff", marginBottom: 10 }}>Quick Links</div>{nav.map(n => <div key={n.id} onClick={() => go(n.id)} style={{ fontSize: 12, marginBottom: 6, cursor: "pointer" }}>{n.l}</div>)}</div>
           <div><div style={{ fontSize: 12, fontWeight: 600, color: "#fff", marginBottom: 10 }}>Contact</div><p style={{ fontSize: 12, marginBottom: 4 }}>📞 +91 8147644747</p><p style={{ fontSize: 12, marginBottom: 4 }}>✉️ operations@gasshieldsolutions.com</p><p style={{ fontSize: 12 }}>📍 Jayanagar, Bangalore - 560041</p></div>
         </div>

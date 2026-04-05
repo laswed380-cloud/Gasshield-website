@@ -179,7 +179,7 @@ export default function AIGasSpecialistChat({
             <div>
               <div style={{ fontSize: 13, fontWeight: 700, color: "#fff" }}>AI Gas Specialist</div>
               <div style={{ fontSize: 10, color: "rgba(255,255,255,0.75)" }}>
-                Fuel guidance, conversion support, and lead qualification
+                Fuel engineering, conversion feasibility, and technical advisory
               </div>
             </div>
           </div>
@@ -263,14 +263,14 @@ export default function AIGasSpecialistChat({
 
           <div style={{ padding: "9px 12px", borderTop: `1px solid ${colors.border}`, background: colors.white }}>
             <div style={{ fontSize: 10, color: colors.muted, lineHeight: 1.5, marginBottom: 8 }}>
-              Informational guidance only. Final technical, commercial, and regulatory decisions require equipment review, site assessment, and qualified implementation.
+              Advisory guidance only. Final engineering, commercial, and regulatory decisions require on-site equipment assessment and qualified implementation.
             </div>
             <div style={{ display: "flex", gap: 6 }}>
               <input
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
                 onKeyDown={onKeyDown}
-                placeholder="Ask about fuels, compatibility, conversion, or next steps..."
+                placeholder="Ask about fuel options, conversion specs, or costs..."
                 style={{
                   flex: 1,
                   padding: "10px 14px",
