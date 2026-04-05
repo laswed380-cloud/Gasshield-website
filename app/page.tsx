@@ -60,7 +60,7 @@ const FAQS = [
   { q: "What is the typical conversion timeline?", a: "Commercial kitchen conversions: 24–72 hours. Industrial boiler retrofits: 3–7 days. All fabrication and pre-assembly is completed off-site to minimise operational downtime during installation." },
   { q: "Does the fuel transition affect cooking output or food quality?", a: "No measurable impact. CBG and ethanol deliver clean, consistent thermal output identical to LPG. Our engineers calibrate each installation to match existing flame profiles and heat distribution." },
   { q: "What cost savings can be expected?", a: "15–40% reduction in fuel expenditure depending on fuel type and consumption volume. Biomass pellets deliver the highest margin. We provide a detailed cost-benefit analysis before any commitment." },
-  { q: "Is ongoing fuel supply included?", a: "Yes. We offer monthly supply contracts with guaranteed delivery logistics. Most clients operate on 6–12 month agreements with fixed pricing and priority scheduling." },
+  { q: "Do you help with fuel procurement?", a: "Yes. We coordinate with verified fuel suppliers and logistics partners on your behalf, facilitating procurement agreements and delivery scheduling. Most clients operate on 6–12 month supply arrangements with priority scheduling." },
   { q: "What is methanol and what are the safety requirements?", a: "Methanol is a high-temperature industrial fuel produced from Indian coal or biomass feedstock. BIS IS 18698 governs its use. All Gas Shield methanol systems include mandatory safety interlocks, ventilation specs, and flame-detection controls." },
   { q: "What geographies does Gas Shield currently serve?", a: "Currently operational across Bangalore and surrounding industrial corridors. Expansion to Chennai, Hyderabad, and Pune is scheduled within the next two quarters." },
 ];
@@ -179,17 +179,17 @@ export default function GasShield() {
 
   return (
     <div style={{ fontFamily: "'DM Sans',-apple-system,sans-serif", color: C.body, background: C.bg }}>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');html{scroll-behavior:smooth}*{margin:0;padding:0;box-sizing:border-box}::selection{background:${C.gL};color:${C.g1}}input,select,textarea,button{font-family:inherit}input:focus,select:focus,textarea:focus{outline:2px solid ${C.g3};outline-offset:2px}@media(max-width:768px){.dsk{display:none!important}.mob{display:flex!important}.grid2{grid-template-columns:1fr!important}.grid3{grid-template-columns:1fr!important}.grid5{grid-template-columns:repeat(3,1fr)!important}}img{display:block;max-width:100%}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pdot{0%,100%{opacity:1}50%{opacity:.3}}h1,h2,h3,h4{font-family:'Inter','DM Sans',sans-serif;letter-spacing:-0.02em}table th{font-family:'Inter','DM Sans',sans-serif}`}</style>
+      <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');html{scroll-behavior:smooth}*{margin:0;padding:0;box-sizing:border-box}::selection{background:${C.gL};color:${C.g1}}input,select,textarea,button{font-family:inherit}input:focus,select:focus,textarea:focus{outline:2px solid ${C.g3};outline-offset:2px}@media(max-width:768px){.dsk{display:none!important}.mob{display:flex!important}.grid2{grid-template-columns:1fr!important}.grid3{grid-template-columns:1fr!important}.grid5{grid-template-columns:repeat(3,1fr)!important}.hero-grid{grid-template-columns:1fr!important}}img{display:block;max-width:100%}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pdot{0%,100%{opacity:1}50%{opacity:.3}}@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes countUp{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}h1,h2,h3,h4{font-family:'Inter','DM Sans',sans-serif;letter-spacing:-0.02em}table th{font-family:'Inter','DM Sans',sans-serif}.nav-link{position:relative;transition:color 0.2s}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:${C.g3};transition:width 0.3s}.nav-link:hover::after{width:100%}.nav-link:hover{color:${C.g2}!important}.hero-stat{animation:countUp 0.6s ease-out both}.hero-stat:nth-child(1){animation-delay:0.1s}.hero-stat:nth-child(2){animation-delay:0.2s}.hero-stat:nth-child(3){animation-delay:0.3s}.hero-stat:nth-child(4){animation-delay:0.4s}.glow-btn{position:relative;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s}.glow-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(58,122,40,0.3)!important}.glow-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);animation:shimmer 3s infinite}`}</style>
 
       {/* NAV */}
       <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, padding: "10px 24px", background: scrolled ? "rgba(255,255,255,0.97)" : "rgba(255,255,255,0.5)", boxShadow: scrolled ? "0 1px 6px rgba(26,60,26,0.06)" : "none", transition: "all 0.3s", backdropFilter: "blur(12px)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div onClick={() => go("hero")} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: 10 }}>
-            <img src={LOGO} alt="Gas Shield" style={{ width: 36, height: 36, objectFit: "contain" }} />
-            <div><div style={{ fontSize: 17, fontWeight: 700, color: C.g1 }}>Gas Shield</div><div style={{ fontSize: 9, color: C.muted, letterSpacing: 2, textTransform: "uppercase", fontWeight: 600 }}>Solutions</div></div>
+            <img src={LOGO} alt="Gas Shield" style={{ width: 40, height: 40, objectFit: "contain" }} />
+            <div><div style={{ fontSize: 18, fontWeight: 800, color: C.g1, letterSpacing: -0.5 }}>Gas Shield</div><div style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ fontSize: 9, fontWeight: 800, color: C.g3, letterSpacing: 2.5 }}>GSS</span><span style={{ fontSize: 9, color: C.muted, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 600 }}>Solutions</span></div></div>
           </div>
           <nav className="dsk" style={{ display: "flex", alignItems: "center", gap: 24 }}>
-            {nav.map(n => <span key={n.id} onClick={() => go(n.id)} style={{ fontSize: 13, fontWeight: 500, color: C.body, cursor: "pointer" }}>{n.l}</span>)}
+            {nav.map(n => <span key={n.id} className="nav-link" onClick={() => go(n.id)} style={{ fontSize: 13, fontWeight: 600, color: C.body, cursor: "pointer", paddingBottom: 4 }}>{n.l}</span>)}
             <button onClick={() => go("advisor")} style={{ ...btn1, padding: "10px 20px", fontSize: 13 }}><Sparkles size={14} /> Free Assessment</button>
           </nav>
           <button className="mob" onClick={() => setMenuOpen(!menuOpen)} style={{ display: "none", background: "none", border: "none", cursor: "pointer", alignItems: "center" }}>{menuOpen ? <X size={22} color={C.g1} /> : <Menu size={22} color={C.g1} />}</button>
@@ -203,45 +203,64 @@ export default function GasShield() {
       </div></div>}
 
       {/* HERO */}
-      <section id="hero" style={{ minHeight: "92vh", display: "flex", alignItems: "center", padding: "100px 24px 60px", background: `linear-gradient(170deg, ${C.white} 0%, ${C.gL} 100%)`, position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", right: "-10%", top: "10%", width: "55%", height: "80%", borderRadius: 28, overflow: "hidden", opacity: 0.12, background: `linear-gradient(135deg, ${C.g2}20, ${C.g3}10)` }}><img src={IMG.factory} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={e => { e.currentTarget.style.display = "none"; }} /></div>
-        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 2 }}>
-          <div style={{ maxWidth: 640 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(58,122,40,0.08)", border: "1px solid rgba(58,122,40,0.15)", borderRadius: 20, padding: "5px 14px", fontSize: 11, fontWeight: 700, color: C.g3, letterSpacing: 2, textTransform: "uppercase", marginBottom: 20 }}>
-              <Heart size={12} fill={C.g3} /> We Stand With Indian Businesses
+      <section id="hero" style={{ minHeight: "100vh", display: "flex", alignItems: "center", padding: "100px 24px 60px", background: `linear-gradient(135deg, ${C.g1} 0%, #0d2a0d 50%, ${C.g2}30 100%)`, position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", inset: 0, background: `url(${IMG.hero})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.08 }} />
+        <div style={{ position: "absolute", top: 0, right: 0, width: "40%", height: "100%", background: `linear-gradient(90deg, ${C.g1}, transparent)`, zIndex: 1 }} />
+        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 120, background: `linear-gradient(to top, ${C.g1}, transparent)`, zIndex: 1 }} />
+        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 2, width: "100%" }}>
+          <div className="hero-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }}>
+            <div style={{ animation: "fadeUp 0.8s ease-out both" }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(58,122,40,0.2)", border: "1px solid rgba(58,122,40,0.3)", borderRadius: 24, padding: "6px 16px", fontSize: 11, fontWeight: 700, color: C.g3, letterSpacing: 2.5, textTransform: "uppercase", marginBottom: 24, backdropFilter: "blur(8px)" }}>
+                Powering India's Energy Transition
+              </div>
+              <h1 style={{ fontSize: "clamp(32px, 5.5vw, 56px)", fontWeight: 900, color: "#fff", lineHeight: 1.08, marginBottom: 20, letterSpacing: -1 }}>Alternative Fuel<br />Engineering for<br /><span style={{ color: C.g3, background: `linear-gradient(135deg, ${C.g3}, #5cb832)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Indian Industry.</span></h1>
+              <p style={{ fontSize: 17, color: "rgba(255,255,255,0.75)", lineHeight: 1.8, marginBottom: 32, maxWidth: 480 }}>We engineer fuel transitions for commercial kitchens, hotels, and industrial facilities — converting existing equipment to alternative fuels with commissioning in 72 hours.</p>
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
+                <button className="glow-btn" onClick={() => go("advisor")} style={{ ...btn1, padding: "16px 32px", fontSize: 15, borderRadius: 28 }}>Get Free Assessment <ArrowRight size={16} /></button>
+                <a href="tel:+918147644747" style={{ ...btn2, textDecoration: "none", padding: "16px 28px", borderRadius: 28, borderColor: "rgba(255,255,255,0.3)", color: "#fff" }}><Phone size={16} /> +91 8147644747</a>
+              </div>
             </div>
-            <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, color: C.g1, lineHeight: 1.12, marginBottom: 16 }}>Alternative Fuel Engineering<br /><span style={{ color: C.g3 }}>for Indian Industry.</span></h1>
-            <p style={{ fontSize: 17, color: C.body, lineHeight: 1.75, marginBottom: 12 }}>We engineer fuel transitions for commercial kitchens, hotels, and industrial facilities — converting existing equipment to alternative fuels and guaranteeing supply commissioning within 72 hours.</p>
-            <p style={{ fontSize: 14, color: C.gold, fontWeight: 600, fontStyle: "italic", marginBottom: 28 }}>"Aap akele nahi hain. Hum aapke saath hain." — You're not alone. We are with you.</p>
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 28 }}>
-              <button onClick={() => go("advisor")} style={btn1}>Get Free Assessment <ArrowRight size={16} /></button>
-              <a href="tel:+918147644747" style={{ ...btn2, textDecoration: "none" }}><Phone size={16} /> +91 8147644747</a>
-            </div>
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-              {["50+ Facilities Converted", "72-Hour Commissioning", "100% Indian Supply Chain", "15–40% Cost Reduction"].map((b, i) => <span key={i} style={{ padding: "6px 14px", borderRadius: 20, background: "rgba(255,255,255,0.9)", border: `1px solid ${C.border}`, fontSize: 11, fontWeight: 600, color: C.g1, backdropFilter: "blur(4px)" }}>{b}</span>)}
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {[
+                { val: "50+", lab: "Facilities Commissioned", icon: "🏭" },
+                { val: "72hr", lab: "Average Conversion Time", icon: "⚡" },
+                { val: "15–40%", lab: "Fuel Cost Reduction", icon: "📉" },
+                { val: "24/7", lab: "Engineering Support", icon: "🛠️" },
+              ].map((s, i) => (
+                <div key={i} className="hero-stat" style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", background: "rgba(255,255,255,0.06)", backdropFilter: "blur(12px)", borderRadius: 14, border: "1px solid rgba(255,255,255,0.08)", transition: "all 0.3s" }} onMouseOver={e => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; e.currentTarget.style.transform = "translateX(8px)"; }} onMouseOut={e => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; e.currentTarget.style.transform = ""; }}>
+                  <span style={{ fontSize: 28, width: 44, textAlign: "center" }}>{s.icon}</span>
+                  <div><div style={{ fontSize: 24, fontWeight: 800, color: "#fff", letterSpacing: -0.5 }}>{s.val}</div><div style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", fontWeight: 500 }}>{s.lab}</div></div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* EMOTIONAL BANNER */}
-      <div style={{ background: `linear-gradient(135deg, ${C.g2}, ${C.g1})`, padding: "20px 24px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
-          <Heart size={20} color={C.gold} fill={C.gold} />
-          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", flex: 1, lineHeight: 1.6 }}><strong style={{ color: "#fff" }}>To every restaurant owner, factory manager, and hotel operator navigating the energy transition:</strong> Gas Shield operates as your dedicated energy engineering partner — not just a vendor. We are committed to ensuring operational continuity for every client we serve.</p>
-          <button onClick={() => go("contact")} style={{ padding: "8px 16px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.3)", background: "rgba(255,255,255,0.1)", color: "#fff", fontSize: 12, fontWeight: 600, cursor: "pointer", whiteSpace: "nowrap" }}>Talk to Us →</button>
+      {/* ANNOUNCEMENT BAR */}
+      <div style={{ background: C.g3, padding: "14px 24px" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center", gap: 24, flexWrap: "wrap" }}>
+          {[{ v: "CNG", l: "Pipeline & Cascade" }, { v: "CBG", l: "SATAT Certified" }, { v: "Ethanol", l: "Zero Soot" }, { v: "Biomass", l: "25–40% Savings" }, { v: "Methanol", l: "BIS Compliant" }].map((f, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ fontSize: 12, fontWeight: 800, color: "#fff" }}>{f.v}</span>
+              <span style={{ fontSize: 10, color: "rgba(255,255,255,0.6)" }}>{f.l}</span>
+              {i < 4 && <span style={{ color: "rgba(255,255,255,0.2)", marginLeft: 12 }}>|</span>}
+            </div>
+          ))}
         </div>
       </div>
 
       {/* THREE PILLARS */}
       <Sec id="solutions" bg={C.off}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Core Engineering Services</h2>
-          <p style={{ fontSize: 15, color: C.muted, maxWidth: 600, margin: "0 auto" }}>End-to-end fuel supply, system conversion engineering, and intelligent energy advisory — tailored to your operational requirements.</p>
+          <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>What We Do</div>
+          <h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, marginBottom: 12, letterSpacing: -0.5 }}>Core Engineering Services</h2>
+          <div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} />
+          <p style={{ fontSize: 15, color: C.muted, maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>Supplier coordination, system conversion engineering, and intelligent energy advisory — tailored to your operational requirements.</p>
         </div>
         <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
           {[
-            { icon: <Truck size={24} color={C.g2} />, t: "Fuel Supply & Logistics", b: "CBG, CNG, ethanol, methanol, and biomass pellets — sourced from verified Indian producers. Guaranteed monthly delivery contracts with 48-hour fulfilment.", f: "Uninterrupted supply chain", img: IMG.tanker, emoji: "🚛" },
+            { icon: <Truck size={24} color={C.g2} />, t: "Supplier Coordination", b: "We coordinate with verified fuel suppliers and logistics partners to connect your facility with CBG, CNG, ethanol, methanol, and biomass sources — ensuring seamless procurement and delivery scheduling.", f: "Managed procurement network", img: IMG.tanker, emoji: "🚛" },
             { icon: <Wrench size={24} color={C.g2} />, t: "Conversion Engineering", b: "On-site retrofit of existing stoves, burners, and boilers to alternative fuel operation — or turnkey installation of new systems. Minimal operational downtime.", f: "72-hour turnaround", img: IMG.stove1, emoji: "🔧" },
             { icon: <Sparkles size={24} color={C.g2} />, t: "AI Energy Assessment", b: "Intelligent fuel analysis covering compatibility modelling, cost projection, and conversion pathways. Available 24/7 for technical guidance and next-step planning.", f: "Data-driven recommendations", img: IMG.kitchen, emoji: "🤖" },
           ].map((c, i) => (
@@ -287,7 +306,7 @@ export default function GasShield() {
 
       {/* PRODUCTS */}
       <Sec id="products" bg={C.off}>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Equipment & Conversion Catalogue</h2><p style={{ fontSize: 15, color: C.muted }}>Engineered solutions for commercial kitchens, industrial boilers, and process heating — deployed across Indian businesses daily.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>Our Catalogue</div><h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, marginBottom: 12, letterSpacing: -0.5 }}>Equipment & Conversion Solutions</h2><div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} /><p style={{ fontSize: 15, color: C.muted, lineHeight: 1.7 }}>Engineered solutions for commercial kitchens, industrial boilers, and process heating — deployed across Indian businesses daily.</p></div>
         <div style={{ display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>{["All", "Kitchen", "Industrial", "Conversion"].map(f => <button key={f} onClick={() => setProdCat(f)} style={pill(prodCat === f)}>{f}</button>)}</div>
         <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
           {prods.map((p, pi) => {
@@ -328,7 +347,7 @@ export default function GasShield() {
 
       {/* FUEL COMPARISON TABLE */}
       <Sec id="compare">
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Fuel Performance Specifications</h2><p style={{ fontSize: 15, color: C.muted }}>Side-by-side technical comparison across all supported fuel types. Engineer your transition with data.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>Technical Data</div><h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, marginBottom: 12, letterSpacing: -0.5 }}>Fuel Performance Specifications</h2><div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} /><p style={{ fontSize: 15, color: C.muted, lineHeight: 1.7 }}>Side-by-side technical comparison across all supported fuel types. Engineer your transition with data.</p></div>
         <div style={{ overflowX: "auto" }}>
           <table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0 3px", minWidth: 800, fontSize: 13 }}>
             <thead><tr style={{ background: C.g2 }}>{["Fuel", "Full Name", "Energy", "Flame Temp", "Savings vs LPG", "Best For", "Storage", "Safety", "Availability"].map(h => <th key={h} style={{ padding: "12px 10px", textAlign: "left", fontSize: 10, fontWeight: 700, color: "#fff", textTransform: "uppercase", letterSpacing: 1 }}>{h}</th>)}</tr></thead>
@@ -351,7 +370,7 @@ export default function GasShield() {
 
       {/* INDUSTRY-FUEL MATCHING — Which fuel fits which business */}
       <Sec bg={C.off}>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Industry-Specific Fuel Mapping</h2><p style={{ fontSize: 15, color: C.muted }}>Recommended fuel pathways mapped by industry segment, thermal capacity, and operational application.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>Industry Matrix</div><h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, marginBottom: 12, letterSpacing: -0.5 }}>Industry-Specific Fuel Mapping</h2><div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} /><p style={{ fontSize: 15, color: C.muted, lineHeight: 1.7 }}>Recommended fuel pathways mapped by industry segment, thermal capacity, and operational application.</p></div>
         <div style={{ overflowX: "auto" }}>
           <table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0 3px", minWidth: 900, fontSize: 13 }}>
             <thead><tr style={{ background: C.g2 }}>{["Industry", "Application", "Capacity", "Recommended Fuel", "Heat Output", "Why This Fuel", "System Type"].map(h => <th key={h} style={{ padding: "12px 8px", textAlign: "left", fontSize: 10, fontWeight: 700, color: "#fff", textTransform: "uppercase", letterSpacing: 1 }}>{h}</th>)}</tr></thead>
@@ -397,12 +416,12 @@ export default function GasShield() {
 
       {/* PACKAGES */}
       <Sec id="packages" bg={C.off}>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Choose Your Plan</h2><p style={{ fontSize: 15, color: C.muted }}>Flexible options that fit your business. No hidden costs, no pressure.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>Pricing</div><h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, marginBottom: 12, letterSpacing: -0.5 }}>Choose Your Plan</h2><div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} /><p style={{ fontSize: 15, color: C.muted, lineHeight: 1.7 }}>Flexible engagement models built for every scale of operation. No hidden costs.</p></div>
         <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
           {[
-            { name: "Free Contract", sub: "Pay as you go", color: C.g3, pop: false, feat: ["No lock-in period", "Best fuel prices in market", "Huge savings vs LPG", "Standard conversion fees apply", "Delivery within 48 hours", "Phone + email support"], cta: "Get Started" },
-            { name: "6-Month Plan", sub: "Most flexible", color: C.g2, pop: true, feat: ["Discounted conversion fees", "10% fuel price discount", "Priority delivery scheduling", "Dedicated support line", "Free quarterly maintenance", "72-hour emergency response"], cta: "Talk to Advisor" },
-            { name: "12-Month Plan", sub: "Maximum value", color: C.g1, pop: false, feat: ["ZERO conversion fees", "15-20% fuel discount", "Dedicated account manager", "Free annual maintenance (AMC)", "Same-day emergency response", "Price lock guarantee"], cta: "Request Enterprise Quote" },
+            { name: "Flex Plan", sub: "Pay as you go", color: C.g3, pop: false, feat: ["No lock-in period", "Competitive fuel pricing via our supplier network", "Significant savings vs LPG", "Standard conversion fees apply", "Coordinated delivery within 48 hours", "Phone + email support"], cta: "Get Started" },
+            { name: "6-Month Plan", sub: "Most popular", color: C.g2, pop: true, feat: ["Discounted conversion fees", "Preferential pricing via supplier agreements", "Priority delivery coordination", "Dedicated support line", "Quarterly maintenance included", "72-hour emergency response"], cta: "Talk to Advisor" },
+            { name: "12-Month Plan", sub: "Maximum value", color: C.g1, pop: false, feat: ["ZERO conversion fees", "Best-in-class negotiated fuel rates", "Dedicated account manager", "Annual maintenance (AMC) included", "Same-day emergency response", "Price stability guarantee"], cta: "Request Enterprise Quote" },
           ].map((p, i) => (
             <div key={i} style={{ ...card, borderTop: `4px solid ${p.color}`, position: "relative", padding: 24, transition: "all 0.3s" }} onMouseOver={e => { e.currentTarget.style.boxShadow = SH2; e.currentTarget.style.transform = "translateY(-4px)"; }} onMouseOut={e => { e.currentTarget.style.boxShadow = SH; e.currentTarget.style.transform = ""; }}>
               {p.pop && <span style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", background: C.gold, color: "#fff", fontSize: 10, fontWeight: 700, padding: "3px 14px", borderRadius: 20 }}>Recommended</span>}
@@ -417,7 +436,7 @@ export default function GasShield() {
 
       {/* CONVERSION TABLE */}
       <Sec>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Conversion Engineering Process</h2><p style={{ fontSize: 15, color: C.muted }}>From site assessment through commissioning to ongoing fuel supply — a fully managed conversion lifecycle.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>How It Works</div><h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, marginBottom: 12, letterSpacing: -0.5 }}>Conversion Engineering Process</h2><div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} /><p style={{ fontSize: 15, color: C.muted, lineHeight: 1.7 }}>From site assessment through commissioning to ongoing support — a fully managed conversion lifecycle.</p></div>
         <div className="grid5" style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 14, marginBottom: 36 }}>
           {[{ n: "1", icon: <ClipboardList size={18} color={C.g2} />, t: "Site Audit" }, { n: "2", icon: <Lightbulb size={18} color={C.g2} />, t: "Engineering Spec" }, { n: "3", icon: <Wrench size={18} color={C.g2} />, t: "Install & Commission" }, { n: "4", icon: <Truck size={18} color={C.g2} />, t: "Fuel Supply" }, { n: "5", icon: <Headphones size={18} color={C.g2} />, t: "Ongoing Support" }].map((s, i) => <div key={i} style={{ textAlign: "center" }}><div style={{ width: 40, height: 40, borderRadius: 10, background: C.gL, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 6px", position: "relative" }}>{s.icon}<span style={{ position: "absolute", top: -3, right: -3, width: 16, height: 16, borderRadius: "50%", background: C.g2, color: "#fff", fontSize: 9, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{s.n}</span></div><span style={{ fontSize: 12, fontWeight: 600, color: C.g1 }}>{s.t}</span></div>)}
         </div>
@@ -425,26 +444,30 @@ export default function GasShield() {
       </Sec>
 
       {/* TRUST */}
-      <Sec bg={C.off}>
-        <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20, textAlign: "center", marginBottom: 32 }}>
-          {[{ n: "50+", l: "Facilities Commissioned" }, { n: "72 hrs", l: "Avg. Conversion Time" }, { n: "15–40%", l: "Fuel Cost Reduction" }].map((s, i) => <div key={i}><div style={{ fontSize: 36, fontWeight: 800, color: C.g2 }}>{s.n}</div><div style={{ fontSize: 13, color: C.muted }}>{s.l}</div></div>)}
+      <Sec style={{ background: `linear-gradient(135deg, ${C.g1}, #0d2a0d)`, padding: "80px 24px" }}>
+        <div style={{ textAlign: "center", marginBottom: 40 }}>
+          <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>Track Record</div>
+          <h2 style={{ fontSize: 32, fontWeight: 800, color: "#fff", letterSpacing: -0.5 }}>Trusted by Indian Businesses</h2>
         </div>
-        <div style={{ maxWidth: 640, margin: "0 auto", ...card, borderLeft: `3px solid ${C.gold}`, padding: 22 }}>
-          <p style={{ fontSize: 15, color: C.g1, fontStyle: "italic", lineHeight: 1.7, marginBottom: 8 }}>"We were days away from shutting our kitchen. Gas Shield converted our existing burners to ethanol in 48 hours. Food quality is identical — our customers didn't notice any difference."</p>
-          <span style={{ fontSize: 12, fontWeight: 600, color: C.muted }}>— Restaurant Owner, Koramangala, Bangalore</span>
+        <div className="grid3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24, textAlign: "center", marginBottom: 40 }}>
+          {[{ n: "50+", l: "Facilities Commissioned" }, { n: "72 hrs", l: "Avg. Conversion Time" }, { n: "15–40%", l: "Fuel Cost Reduction" }].map((s, i) => <div key={i} style={{ padding: "28px 16px", background: "rgba(255,255,255,0.04)", borderRadius: 16, border: "1px solid rgba(255,255,255,0.06)" }}><div style={{ fontSize: 42, fontWeight: 900, background: `linear-gradient(135deg, ${C.g3}, #5cb832)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>{s.n}</div><div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 4 }}>{s.l}</div></div>)}
         </div>
-        <div style={{ display: "flex", gap: 10, justifyContent: "center", marginTop: 20 }}>{["Made in India", "PESO-Compliant", "Clean Energy Certified"].map((b, i) => <span key={i} style={{ padding: "6px 14px", borderRadius: 8, background: C.gL, fontSize: 12, fontWeight: 600, color: C.g2, border: `1px solid ${C.border}` }}>{b}</span>)}</div>
+        <div style={{ maxWidth: 640, margin: "0 auto", padding: 28, background: "rgba(255,255,255,0.04)", borderRadius: 16, border: "1px solid rgba(255,255,255,0.06)", borderLeft: `3px solid ${C.gold}` }}>
+          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", fontStyle: "italic", lineHeight: 1.8, marginBottom: 10 }}>"We were days away from shutting our kitchen. Gas Shield converted our existing burners to ethanol in 48 hours. Food quality is identical — our customers didn't notice any difference."</p>
+          <span style={{ fontSize: 12, fontWeight: 600, color: C.gold }}>— Restaurant Owner, Koramangala, Bangalore</span>
+        </div>
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", marginTop: 28 }}>{["Made in India", "PESO-Compliant", "Clean Energy Certified"].map((b, i) => <span key={i} style={{ padding: "8px 16px", borderRadius: 20, background: "rgba(58,122,40,0.15)", fontSize: 12, fontWeight: 600, color: C.g3, border: "1px solid rgba(58,122,40,0.2)" }}>{b}</span>)}</div>
       </Sec>
 
       {/* FAQ */}
       <Sec>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1 }}>Frequently Asked Questions</h2></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>FAQ</div><h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, letterSpacing: -0.5 }}>Frequently Asked Questions</h2><div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} /></div>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>{FAQS.map((f, i) => <div key={i} style={{ borderBottom: `1px solid ${C.border}` }}><button onClick={() => setFaqOpen(faqOpen === i ? null : i)} style={{ width: "100%", padding: "16px 0", display: "flex", justifyContent: "space-between", alignItems: "center", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}><span style={{ fontSize: 14, fontWeight: 600, color: C.g1, paddingRight: 16 }}>{f.q}</span>{faqOpen === i ? <ChevronUp size={16} color={C.muted} /> : <ChevronDown size={16} color={C.muted} />}</button>{faqOpen === i && <div style={{ padding: "0 0 16px", fontSize: 13, color: C.body, lineHeight: 1.7 }}>{f.a}</div>}</div>)}</div>
       </Sec>
 
       {/* CONTACT */}
       <Sec id="contact" bg={C.off}>
-        <div style={{ textAlign: "center", marginBottom: 44 }}><h2 style={{ fontSize: 28, fontWeight: 700, color: C.g1, marginBottom: 10 }}>Request a Consultation</h2><p style={{ fontSize: 15, color: C.muted }}>No obligation. Share your requirements and our engineering team will respond within 2–4 hours.</p></div>
+        <div style={{ textAlign: "center", marginBottom: 44 }}><div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, color: C.g3, marginBottom: 8, textTransform: "uppercase" }}>Get In Touch</div><h2 style={{ fontSize: 32, fontWeight: 800, color: C.g1, marginBottom: 12, letterSpacing: -0.5 }}>Request a Consultation</h2><div style={{ width: 48, height: 3, background: `linear-gradient(90deg, ${C.g3}, ${C.g2})`, borderRadius: 2, margin: "0 auto 16px" }} /><p style={{ fontSize: 15, color: C.muted, lineHeight: 1.7 }}>No obligation. Share your requirements and our engineering team will respond within 2–4 hours.</p></div>
         <div className="grid2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 28, maxWidth: 920, margin: "0 auto" }}>
           <div style={{ ...card, padding: 24 }}>
             {formDone ? <div style={{ textAlign: "center", padding: 40 }}><CheckCircle size={40} color={C.g3} style={{ margin: "0 auto 12px" }} /><h3 style={{ fontSize: 18, fontWeight: 700, color: C.g1, marginBottom: 6 }}>Thank you!</h3><p style={{ fontSize: 14, color: C.body }}>We'll call within 2-4 hours. For immediate help: <strong>+91 8147644747</strong></p></div> : (
@@ -461,7 +484,8 @@ export default function GasShield() {
             {[
               { icon: <Phone size={18} color={C.g2} />, l: "Call", v: "+91 8147644747" },
               { icon: <MessageCircle size={18} color="#25D366" />, l: "WhatsApp", v: "+91 8147644747" },
-              { icon: <Mail size={18} color={C.g2} />, l: "Email", v: "operations@gasshieldsolutions.com" },
+              { icon: <Mail size={18} color={C.g2} />, l: "Management", v: "management@gasshieldsolutions.com" },
+              { icon: <Mail size={18} color={C.g2} />, l: "Partnerships", v: "partnership.development@gasshieldsolutions.com" },
               { icon: <MapPin size={18} color={C.g2} />, l: "Office", v: "HP No.51(1), 5th Main Rd, 5th Block, Jayanagar, Bangalore - 560041" },
             ].map((c, i) => <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}><div style={{ width: 40, height: 40, borderRadius: 10, background: C.gL, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{c.icon}</div><div><div style={{ fontSize: 11, color: C.muted, fontWeight: 600 }}>{c.l}</div><div style={{ fontSize: 14, fontWeight: 600, color: C.g1 }}>{c.v}</div></div></div>)}
             <div style={{ ...card, padding: 16, borderLeft: `3px solid ${C.gold}`, marginTop: 8 }}><p style={{ fontSize: 13, color: C.body, fontStyle: "italic" }}>"Typical response time: 2–4 hours. For urgent requirements, call directly — our engineering team operates 24/7."</p></div>
@@ -470,13 +494,23 @@ export default function GasShield() {
       </Sec>
 
       {/* FOOTER */}
-      <footer style={{ background: C.g1, padding: "44px 24px 20px", color: "rgba(255,255,255,0.6)" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 28, marginBottom: 24 }} className="grid3">
-          <div><div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}><img src={LOGO} alt="Logo" style={{ width: 24, height: 24 }} /><span style={{ fontSize: 15, fontWeight: 700, color: "#fff" }}>Gas Shield Solutions</span></div><p style={{ fontSize: 12, lineHeight: 1.6 }}>Alternative Fuel Engineering for Indian Industry<br />www.gasshieldsolutions.com</p></div>
-          <div><div style={{ fontSize: 12, fontWeight: 600, color: "#fff", marginBottom: 10 }}>Quick Links</div>{nav.map(n => <div key={n.id} onClick={() => go(n.id)} style={{ fontSize: 12, marginBottom: 6, cursor: "pointer" }}>{n.l}</div>)}</div>
-          <div><div style={{ fontSize: 12, fontWeight: 600, color: "#fff", marginBottom: 10 }}>Contact</div><p style={{ fontSize: 12, marginBottom: 4 }}>📞 +91 8147644747</p><p style={{ fontSize: 12, marginBottom: 4 }}>✉️ operations@gasshieldsolutions.com</p><p style={{ fontSize: 12 }}>📍 Jayanagar, Bangalore - 560041</p></div>
+      <footer style={{ background: `linear-gradient(180deg, #0d2a0d, ${C.g1})`, padding: "56px 24px 20px", color: "rgba(255,255,255,0.5)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 32, marginBottom: 32 }} className="grid3">
+          <div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+              <img src={LOGO} alt="Logo" style={{ width: 32, height: 32 }} />
+              <div><span style={{ fontSize: 16, fontWeight: 800, color: "#fff", display: "block" }}>Gas Shield Solutions</span><span style={{ fontSize: 10, fontWeight: 800, color: C.g3, letterSpacing: 2.5 }}>GSS</span></div>
+            </div>
+            <p style={{ fontSize: 12, lineHeight: 1.7, marginBottom: 12 }}>Alternative Fuel Engineering for Indian Industry</p>
+            <p style={{ fontSize: 11, color: "rgba(255,255,255,0.3)" }}>www.gasshieldsolutions.com</p>
+          </div>
+          <div><div style={{ fontSize: 11, fontWeight: 700, color: C.g3, letterSpacing: 2, marginBottom: 14, textTransform: "uppercase" }}>Quick Links</div>{nav.map(n => <div key={n.id} onClick={() => go(n.id)} style={{ fontSize: 12, marginBottom: 8, cursor: "pointer", transition: "color 0.2s" }} onMouseOver={e => { e.currentTarget.style.color = "#fff"; }} onMouseOut={e => { e.currentTarget.style.color = ""; }}>{n.l}</div>)}</div>
+          <div><div style={{ fontSize: 11, fontWeight: 700, color: C.g3, letterSpacing: 2, marginBottom: 14, textTransform: "uppercase" }}>Contact</div><p style={{ fontSize: 12, marginBottom: 6, color: "rgba(255,255,255,0.6)" }}>+91 8147644747</p><p style={{ fontSize: 12, marginBottom: 6 }}>management@gasshieldsolutions.com</p><p style={{ fontSize: 12, marginBottom: 6 }}>partnership.development@gasshieldsolutions.com</p><p style={{ fontSize: 12 }}>Jayanagar, Bangalore - 560041</p></div>
         </div>
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: 16, display: "flex", justifyContent: "space-between" }}><span style={{ fontSize: 11 }}>© 2026 Gas Shield Solutions OPC Pvt Ltd</span><span style={{ fontSize: 11 }}>Made in India 🇮🇳</span></div>
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: 11 }}>© 2026 Gas Shield Solutions OPC Pvt Ltd. All rights reserved.</span>
+          <div style={{ display: "flex", gap: 16 }}><span style={{ fontSize: 11 }}>Made in India</span><span style={{ fontSize: 11, color: C.g3 }}>Powered by Clean Energy</span></div>
+        </div>
       </footer>
 
       {/* WHATSAPP */}

@@ -1,5 +1,6 @@
 export const COMPANY_PHONE = "+91 8147644747";
-export const COMPANY_EMAIL = "operations@gasshieldsolutions.com";
+export const COMPANY_EMAIL = "management@gasshieldsolutions.com";
+export const COMPANY_PARTNERSHIP_EMAIL = "partnership.development@gasshieldsolutions.com";
 export const COMPANY_WEBSITE = "www.gasshieldsolutions.com";
 export const COMPANY_ADDRESS = "HP No.51(1), 5th Main Road, 5th Block, Jayanagar, Bangalore - 560041";
 
@@ -117,7 +118,8 @@ Gas Shield Solutions is an alternative fuel engineering company serving commerci
 
 Company details:
 - Phone: ${COMPANY_PHONE}
-- Email: ${COMPANY_EMAIL}
+- Email (Management): ${COMPANY_EMAIL}
+- Email (Partnerships): ${COMPANY_PARTNERSHIP_EMAIL}
 - Address: ${COMPANY_ADDRESS}
 - Website: ${COMPANY_WEBSITE}
 - Operating region: Bangalore and surrounding industrial corridors (expanding to Chennai, Hyderabad, Pune)
